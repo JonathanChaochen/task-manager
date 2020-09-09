@@ -4,9 +4,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/task-manager-api', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 });
-
-
 
 // const me = new User({
 //   name: ' Mike ',
@@ -21,8 +20,6 @@ mongoose.connect('mongodb://127.0.0.1:27017/task-manager-api', {
 //   .catch((error) => {
 //     console.log('Error:', error);
 //   });
-
-
 
 // const task = new Task({
 //   description: ' Eat lunch',
